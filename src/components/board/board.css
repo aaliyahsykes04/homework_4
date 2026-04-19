@@ -1,0 +1,125 @@
+/* ── Outer wrapper ── */
+.board {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: var(--font-sans);
+}
+
+/* ── Header row ── */
+.board-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.board-title {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  color: var(--color-text-primary);
+}
+
+.btn-add {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border-secondary);
+  background: transparent;
+  cursor: pointer;
+  color: var(--color-text-primary);
+}
+
+.btn-add:hover {
+  background: var(--color-background-secondary);
+}
+
+/* ── Add task form ── */
+.add-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+  padding: 14px;
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: 10px;
+  background: var(--color-background-secondary);
+}
+
+.form-input,
+.form-textarea {
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border-tertiary);
+  background: var(--color-background-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.btn-submit {
+  font-size: 13px;
+  padding: 7px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border-success);
+  color: var(--color-text-success);
+  background: transparent;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.btn-submit:hover {
+  background: var(--color-background-success);
+}
+
+/* ── Two column layout ── */
+.board-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* ── Each column ── */
+.column {
+  background: var(--color-background-secondary);
+  border-radius: 12px;
+  padding: 14px;
+  min-height: 300px;
+}
+
+.column-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.column-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.column-count {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 99px;
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-tertiary);
+  color: var(--color-text-secondary);
+}
+
+/* ── Empty state hint ── */
+.empty-hint {
+  font-size: 13px;
+  color: var(--color-text-tertiary);
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 0;
+}
