@@ -1,5 +1,5 @@
 // import the css file for this component 
-import './statbar.css';
+import "./statsbar.css";
 
 //statsbar component
 //receives the tasks array as a prop from board.jsx and compute all the numbers it needs from it 

@@ -1,17 +1,11 @@
-
-/* ── Global reset ──
-   Removes default browser spacing so everything
-   starts from a clean slate */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ── Root app wrapper ── */
 .app {
   min-height: 100vh;
-  background: var(--color-background-tertiary);
-  color: var(--color-text-primary);
-  font-family: var(--font-sans);
+  background: #f7f7f5;
+  font-family: sans-serif;
 }
