@@ -1,0 +1,64 @@
+/* - Card container - */ 
+.task-card { 
+    background: rgb(21, 86, 171);
+    border: 1xp solid #e5e5e5;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    transition: border-color 0.15s;
+}
+
+.task-card:hover {
+    border-color: #bbb;
+}
+
+/* Fades the card when status is "done" */
+.task-card.done {
+  opacity: 0.6;
+}
+
+/* ── Title ── */
+.task-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+
+/* Strikes through the title when done */
+.task-card.done .task-title {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* ── Description ── */
+.task-description {
+  font-size: 13px;
+  color: #666;
+  margin: 6px 0 10px;
+  line-height: 1.6;
+}
+
+/* ── Buttons row ── */
+.task-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.task-actions button {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn-complete { color: green;  border-color: green; }
+.btn-todo     { color: #555;   border-color: #ccc;  }
+.btn-remove   { color: red;    border-color: red; margin-left: auto; }
+
+.task-actions button:hover {
+  opacity: 0.75;
+}
